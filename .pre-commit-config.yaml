@@ -1,0 +1,14 @@
+repos:
+  # Python Formatter (Black)
+  - repo: https://github.com/psf/black
+    rev: 23.9.1
+    hooks:
+      - id: black
+        types: [python]
+
+  # C / C++ Formatter (clang-format)
+  - repo: https://github.com/pre-commit/mirrors-clang-format
+    rev: v16.0.6
+    hooks:
+      - id: clang-format
+        types_or: [c, c++]
